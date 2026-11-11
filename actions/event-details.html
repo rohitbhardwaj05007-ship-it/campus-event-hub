@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details | Campus Event Hub</title>
+    <link rel="stylesheet" href="../design/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Campus Event Hub</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="event-details">
+            <h2>Campus Tech Fest 2026</h2>
+            <p>
+                Explore exciting technical events and showcase your
+                creativity, coding skills, and innovative ideas.
+            </p>
+
+            <h3>Activities</h3>
+            <ul>
+                <li>Hackathon</li>
+                <li>Coding Competition</li>
+                <li>Technical Quiz</li>
+                <li>Project Showcase</li>
+                <li>Robotics Challenge</li>
+            </ul>
+
+            <a href="#student-registration" class="btn">Register Now</a>
+        </section>
+
+        <section class="event-details">
+            <h2>Cultural Fest 2026</h2>
+            <p>
+                Celebrate talent, culture, and creativity through
+                exciting performances and competitions.
+            </p>
+
+            <h3>Activities</h3>
+            <ul>
+                <li>Solo and Group Dance</li>
+                <li>Singing Competition</li>
+                <li>Fashion Show</li>
+                <li>Drama and Theatre</li>
+                <li>Art and Craft Exhibition</li>
+            </ul>
+
+            <a href="#student-registration" class="btn">Register Now</a>
+        </section>
+
+        <section class="event-details">
+            <h2>Sports Meet 2026</h2>
+            <p>
+                Participate in exciting sports competitions and
+                enjoy teamwork, fitness, and friendly competition.
+            </p>
+
+            <h3>Activities</h3>
+            <ul>
+                <li>Cricket Tournament</li>
+                <li>Football Competition</li>
+                <li>Badminton Matches</li>
+                <li>Basketball Tournament</li>
+                <li>100m and 200m Race</li>
+                <li>Volleyball Competition</li>
+            </ul>
+
+            <a href="#student-registration" class="btn">Register Now</a>
+        </section>
+
+        <section id="student-registration" class="event-details">
+            <h2>Student Registration</h2>
+
+            <form action="confirmation.html" method="get">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <label for="event">Select Event:</label>
+                <select id="event" name="event" required>
+                    <option value="">Choose an Event</option>
+                    <option value="Campus Tech Fest">Campus Tech Fest</option>
+                    <option value="Cultural Fest">Cultural Fest</option>
+                    <option value="Sports Meet">Sports Meet</option>
+                </select>
+
+                <button type="submit" class="btn">
+                    Submit Registration
+                </button>
+
+            </form>
+        </section>
+
+        <a href="index.html" class="btn">Back to Home</a>
+
+    </main>
+
+</body>
+</html>
