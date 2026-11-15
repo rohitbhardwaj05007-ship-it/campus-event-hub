@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus Event Hub | Contact</title>
-    <link rel="stylesheet" href="../design/style.css">
+    <link rel="stylesheet" href="../design/contact.css">
 </head>
 <body>
 
@@ -12,8 +12,7 @@
     <header>
         <h2> Campus Event Hub</h2>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="events.html">Explore Events</a>
+            <a href="../index.html">Home</a>
             <a href="register.html">Register</a>
             <a href="contact.html" class="active">Contact</a>
         </nav>
@@ -32,7 +31,7 @@
             <!-- Contact Cards -->
             <div class="contact-info-panel">
                 <div class="info-card">
-                    <h3>📍 Campus Helpdesk</h3>
+                    <h3 class="helpdesk-title">📍 Campus Helpdesk</h3>
                     <p>Student Welfare Association Foyer<br>Division of Student Affairs, Block 13</p>
                 </div>
                 <div class="info-card">
@@ -62,15 +61,21 @@
                     <label for="message">Message</label>
                     <textarea id="message" rows="4" placeholder="How can the organizing committee help you?" required></textarea>
                 </div>
-                <button type="submit" class="btn submit-btn">Send Message</button>
-            </form>
+               <a href="#confirmation" class="submit-btn">Send Message</a>
 
+            <div id="confirmation" class="confirmation-box">
+            <h3>✓ Query Submitted!</h3>
+            <p>Your query has been submitted successfully.</p>
+            <a href="#" class="close-btn">OK</a>
+            </div>
+
+            
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Campus Event Hub. CSE 326 Web Development Laboratory Project.</p>
+        <p>© 2026 Campus Event Hub.</p>
     </footer>
 
 </body>

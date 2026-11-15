@@ -1,0 +1,310 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6fb;
+    color: #222;
+    zoom: 90%;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #172554;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-family: Arial, sans-serif;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+section.page-header {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+section.page-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+.helpdesk-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #263b60;
+    font-family: Arial, sans-serif;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+/* Decorative underline */
+.helpdesk-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 3px;
+    background: #5276b9;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.helpdesk-title:hover::after {
+    width: 100%;
+}
+.p{
+    align-items: center;
+
+}
+.content-section {
+    padding: 60px 8%;
+    background-color: #f4f6fb;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}.contact-info-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-left: 4px solid #5276b9;
+    transition: 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.info-card h3 {
+    font-size: 21px;
+    color: #263b60;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+}
+
+.helpdesk-title {
+    text-align: center;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.helpdesk-title::after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 3px;
+    background: #5276b9;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.helpdesk-title:hover::after {
+    width: 80%;
+}
+.info-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+.info-card a {
+    color: #5276b9;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.info-card a:hover {
+    color: #263b60;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-section {
+        padding: 35px 5%;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+}
+
+.contact-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+.contact-form {
+    width: 100%;
+    max-width: 750px;
+    background: white;
+    padding: 35px 45px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.09);
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #263b60;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #263b60;
+    margin-bottom: 9px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 14px;
+    border: 1px solid #d5ddeb;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #5276b9;
+    box-shadow: 0 0 6px rgba(82,118,185,0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: #263b60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #5276b9;
+    transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+
+    .contact-info-panel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-card {
+        width: 100%;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+}
+.confirmation-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 35px;
+    width: 350px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.confirmation-box:target {
+    display: block;
+}
+
+.confirmation-box h3 {
+    color: #207a42;
+    margin-bottom: 12px;
+}
+
+.confirmation-box p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #263b60;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+}
+footer {
+    background: #263b60;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
